@@ -5,6 +5,7 @@ build:
     coverage:
       tests:
         override:
+          - command: npm install
           - command: npm test
     analysis:
             tests:
