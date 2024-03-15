@@ -12,3 +12,4 @@ https://jsframeworks.ysojs.se/
 
 If enabled it also runs the test in efoSelenium folder (Emil Folino from BTH Blekinge Technical Institute)
 Then first start the app (efoSelemnium & npm start).
+And enable the // marked tests in runningTestsDbWebb.spec.js
