@@ -1,0 +1,13 @@
+checks:
+    javascript: true
+build:
+  nodes:
+    coverage:
+      tests:
+        override:
+          - command: npm start
+          - command: npm test
+    analysis:
+            tests:
+                override:
+                    - js-scrutinizer-run

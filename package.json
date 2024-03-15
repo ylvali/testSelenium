@@ -2,7 +2,7 @@
     "name": "javascript-examples",
     "version": "1.0.0",
     "scripts": {
-        "start": "node efo/Selenium node_modules/http-server/bin/http-server -p 8082 src",
+        "start": "node efoSelenium/node_modules/http-server/bin/http-server -p 8082 src",
         "test": "npx mocha test/**/*.spec.js --timeout 60000"
     },
     "author": "The Selenium project",
