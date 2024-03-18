@@ -4,7 +4,7 @@ node_js:
     - "12"
     - "10"
 
-sudo: false
+sudo: required
 
 git:
     submodules: false
