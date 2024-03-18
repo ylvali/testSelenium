@@ -21,6 +21,7 @@ addons:
       - google-chrome-stable
 
 before_script:
+    - echo $PATH
     - wget http://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip
     - unzip chromedriver_linux64.zip -d /home/travis/
     - export CHROME_BIN=chromium-browser
