@@ -9,6 +9,15 @@ sudo: false
 git:
     submodules: false
 
+dist: xenial
+services:
+  - xvfb
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+
 before_script:
     - npm install
 
