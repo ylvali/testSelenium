@@ -23,7 +23,8 @@ addons:
 before_script:
     - echo $PATH
     - wget http://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip
-    - unzip chromedriver_linux64.zip -d /home/travis/
+    - unzip chromedriver_linux64.zip -d /home/travis/usr/bin/
+    - unzip chromedriver_linux64.zip -d /usr/bin/
     - export CHROME_BIN=chromium-browser
     - "export DISPLAY=:99.0"
     - npm install
