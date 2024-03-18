@@ -15,7 +15,10 @@ const assert = require("assert");
       assert.equal("Yso App", title);
       console.log(title);
     
-      await driver.manage().setTimeouts({implicit: 500});
+      // 4.18.1 selenium driver:
+      // await driver.manage().setTimeouts({implicit: 500});
+      // selenium driver prev versions
+      driver.manage().timeouts().implicitlyWait(2000); // selenium driver 3.0.0
   
       // 3 easy test cases
       // Check a navigation link
