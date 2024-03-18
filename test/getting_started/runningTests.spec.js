@@ -14,7 +14,11 @@ const assert = require("assert");
       let title = await driver.getTitle();
       assert.equal("Web form", title);
       
-      await driver.manage().setTimeouts({implicit: 500});
+     // 4.18.1 selenium driver:
+     // await driver.manage().setTimeouts({implicit: 500});
+
+     // selenium driver prev versions
+      driver.manage().timeouts().implicitlyWait(2000); // selenium driver 3.0.0
       
       let textBox = await driver.findElement(By.name('my-text'));
       let submitButton = await driver.findElement(By.css('button'));
